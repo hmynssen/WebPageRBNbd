@@ -1,0 +1,16 @@
+.integration-list .item img {
+    width: 140px;
+    height: auto;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+@media (min-width: 992px){
+    .mb-lg-5 {
+        margin-bottom: 3rem !important;
+    }
+}

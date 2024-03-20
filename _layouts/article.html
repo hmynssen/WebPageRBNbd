@@ -1,0 +1,38 @@
+---
+layout: base
+---
+
+{%assign lpath = page.path | split:"/"%}
+{%assign article = lpath[-2] %}
+
+{% assign files = site.static_files | where_exp: "item", "item.path contains 'data/publications'"%}
+{% assign files = files | where_exp: "item", "item.path contains article"%}
+{% assign image = files | where_exp: "item", "item.path contains page.main-image"%}
+<div class="container mb-3 mt-3">
+    <div class="row d-flex flex-column align-items-center">
+        <div class="col col-md-8 mb-3 h2">
+            {{page.title}}
+        </div>
+        <div class="col col-md-8 text-muted">
+            {{page.authors | replace: 'and', ',' | replace: ' ,', ','}}
+        </div>
+        <div class="col col-md-8 mb-5 text-muted">
+            {{page.date | date: '%B, %Y' }}
+        </div>
+        {%if image[0].path%}
+            <div class="col mb-3 col-sm-4 text-center">
+                <img class="img-fluid h-100 rounded-start" src="{{image[0].path}}" alt="">
+            </div>
+        {%endif%}
+        <hr class="col col-md-8 mb-4 text-muted">
+        {%if page.abstract%}
+            <div class="col col-md-8 mb-3 h3">
+                Abstract
+            </div>
+            <div class="col col-md-8">
+                {{page.abstract}}
+            </div>
+        {%endif%}
+    </div>
+</div>
+

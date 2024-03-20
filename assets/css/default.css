@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSans.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansBold.eot');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansItalic.eot');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansBoldItalic.eot');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansLight.eot');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansLightItalic.eot');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansMedium.eot');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansMediumItalic.eot');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansHeavy.eot');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/gillSansHeavyItalic.eot');
+    font-weight: 900;
+    font-style: italic;
+}
+
+body {
+    --bs-font-sans-serif: 'Gill Sans', sans-serif;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-font-monospace: 'VT323', monospace;
+}
+

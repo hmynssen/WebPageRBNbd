@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-xl navbar-light sticky-top" style="background-color: #def1ff;">
+  <div class="container">
+
+    <a class="navbar-brand" href="{{ '/' | absolute_url }}">
+      <img src="/assets/logo/rbnb_colorida-just-nobg.png" alt="" height="50">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaritems" aria-controls="navbaritems" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbaritems">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item">
+          <a class="nav-link fs-5" aria-current="page" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link fs-5" aria-current="page" href="{{ '/' | absolute_url }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="/publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="/projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="/news">News</a>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-hover fs-5" href="/members" id="dropdown07XL" data-bs-hover="dropdown">Members</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
+            <li><a class="dropdown-item fs-6" href="#">Researchers</a></li>
+            <li><a class="dropdown-item fs-6" href="#">Students</a></li>
+            <li><a class="dropdown-item fs-6" href="#">Colaborators</a></li>
+          </ul>
+        </li>
+        <li class="nav-item fs-5">
+          <a class="nav-link" href="/sponsors">Sponsors</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
