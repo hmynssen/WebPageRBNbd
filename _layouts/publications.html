@@ -3,10 +3,10 @@ layout: base
 ---
 <div class="container mt-5">
   <div class="row d-none d-lg-flex">
-    <div class="col-3 h1 d-flex flex-column align-items-center">
+    <div class="col-4 col-xxl-3 offset-xxl-1 h1 fw-bold d-flex flex-column align-items-center">
       <div class="mt-5">{{page.title}}</div>
     </div>
-    <div class="d-flex flex-column align-items-center col-7 offset-md-1">
+    <div class="d-flex flex-column align-items-center col-8 col-xl-7 offset-xl-1">
         {% for folder in site.data.publications %}
             {% assign article = folder[0]%}
             {% assign files = site.pages | where_exp: "item", "item.path contains 'data/publications'"%}
@@ -44,7 +44,7 @@ layout: base
     </div>
   </div>
   <div class="row d-lg-none">
-    <div class="col col-lg-4 mb-5 offset-md-1 h1">
+    <div class="col col-lg-4 mb-5 offset-md-1 h1 fw-bold">
       {{page.title}}
     </div>
       <div class="d-flex flex-column align-items-center">

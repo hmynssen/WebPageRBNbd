@@ -1,4 +1,4 @@
 ---
 layout: publications
-title: Journal articles
+title: Check out our latest papers!
 ---
