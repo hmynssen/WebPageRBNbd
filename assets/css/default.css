@@ -65,3 +65,8 @@ body {
     --bs-font-monospace: 'VT323', monospace;
 }
 
+.hr-shade-bg {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(90deg, #0f296d, #27aae1, #2bb673, #edab00);
+}
