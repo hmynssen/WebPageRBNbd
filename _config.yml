@@ -25,8 +25,9 @@ keywords: lab network science
 description: >- # this means to ignore newlines until "baseurl:"
   Rede Brasileira de Neurobiodiversidade. 
   Brazilian network of neurobiodiversity.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://hmynssen.github.io/WebPageRBNbd/" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "hmynssen.github.io"
+baseurl: "/WebPageRBNbd/" # the subpath of your site, e.g. /blog
+url: "https://hmynssen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: redebnbd
 github_username: redebnbd
 

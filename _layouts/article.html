@@ -21,7 +21,7 @@ layout: base
         </div>
         {%if image[0].path%}
             <div class="col mb-3 col-sm-4 text-center">
-                <img class="img-fluid h-100 rounded-start" src="{{image[0].path}}" alt="">
+                <img class="img-fluid h-100 rounded-start" src="{{site.baseurl}}{{image[0].path}}" alt="">
             </div>
         {%endif%}
         <hr class="col col-md-8 mb-4 text-muted">
