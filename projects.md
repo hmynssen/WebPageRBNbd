@@ -1,5 +1,4 @@
 ---
-layout: home
+layout: projects
+title: Projects
 ---
-
-## Projects
