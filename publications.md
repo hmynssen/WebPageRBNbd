@@ -1,4 +1,5 @@
 ---
 layout: publications
-title: Check out our latest papers!
+title: Here are all our publications!
+home-title: Our main publications!
 ---
