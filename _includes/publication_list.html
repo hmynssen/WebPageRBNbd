@@ -1,0 +1,25 @@
+{% for folder in site.data.publications %}
+    {% assign article = folder[0]%}
+    {% assign files = site.pages | where_exp: "item", "item.path contains 'data/publications'"%}
+    {% assign files = files | where_exp: "item", "item.path contains article"%}
+    {% for item in files %}
+        {%assign name_html = item.name | replace: "md", "html"%}
+        {%assign image_files = item.thumbnail%}
+        <div class=" mt-2 mb-5" style="height: 180px;">
+        <div class="card h-100 bg-light" style="border: none;"> 
+            <div class="row g-0 h-100">
+            <div class="col align-self-start h-100 d-flex flex-column">
+                <div class="card-body">
+                <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 h3" href="{{site.baseurl}}/{{item.dir}}{{name_html}}">{{item.title}}</a><br> 
+                <p class="card-text">{{ item.authors | replace: " and", ","}}</p>
+                <p class="card-text"><small class="text-muted">Published: {{item.date | date: '%B, %Y' }}</small></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-10 offset-1 mt-2">
+            <hr class="hr-shade-bg"/>
+        </div>
+        </div>
+    {% endfor %}
+{% endfor %}
