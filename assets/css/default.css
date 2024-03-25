@@ -70,3 +70,7 @@ body {
     height: 1px;
     background-image: linear-gradient(90deg, #0f296d, #27aae1, #2bb673, #edab00);
 }
+
+.shade-bg {
+    background-image: linear-gradient(90deg, #0f296d, #27aae1, #2bb673, #edab00);
+}
