@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-xl navbar-light sticky-top shadow" style="background-color: #FFFFFF;">
   <div class="container">
-    <a class="navbar-brand" href="{{ '/' | absolute_url }}">
+    <a class="navbar-brand" id="nav-home-img"
+    onclick="set_href('nav-home-img', '{{site.baseurl}}/{{home_link}}')"  href="">
       <img src="{{site.baseurl}}/assets/logo/rbnb_colorida-just-nobg.png" alt="" height="50">
     </a>
 
@@ -14,25 +15,43 @@
           <a class="nav-link fs-5" aria-current="page" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link fs-5" aria-current="page" href="{{ '/' | absolute_url }}">Home</a>
+          <a class="nav-link fs-5" id="nav-home" aria-current="page"
+           onclick="set_href('nav-home', '{{site.baseurl}}/{{home_link}}')" href="">
+            <script type="text/javascript">
+              document.write(home_text)
+            </script>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="{{site.baseurl}}/publications">Publications</a>
+          <a class="nav-link fs-5" id="nav-pub"
+          onclick="set_href('nav-pub', '{{site.baseurl}}/{{pub_link}}')" href="">
+            <script type="text/javascript">
+              document.write(pub_text)
+            </script>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="{{site.baseurl}}/projects">Projects</a>
+          <a class="nav-link fs-5" id="nav-proj"
+          onclick="set_href('nav-news', '{{site.baseurl}}/{{projects_link}}')"  href="">
+            <script type="text/javascript">
+              document.write(projects_text)
+            </script>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="{{site.baseurl}}/news">News</a>
+          <a class="nav-link fs-5" id="nav-news"
+          onclick="set_href('nav-news', '{{site.baseurl}}/{{news_link}}')" href="">
+            <script type="text/javascript">
+              document.write(news_text)
+            </script>
+          </a>
         </li>
-        <li class="nav-item active dropdown">
-          <a class="nav-link dropdown-hover fs-5" href="{{site.baseurl}}/members" id="dropdown07XL" data-bs-hover="dropdown">Members</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
-            <li><a class="dropdown-item fs-6" href="#">Researchers</a></li>
-            <li><a class="dropdown-item fs-6" href="#">Students</a></li>
-            <li><a class="dropdown-item fs-6" href="#">Colaborators</a></li>
-          </ul>
-        </li>
+        <a class="nav-link fs-5" id="nav-members" data-bs-hover="dropdown"
+        onclick="set_href('nav-members', '{{site.baseurl}}/{{members_link}}')" href="">
+          <script type="text/javascript">
+            document.write(members_text)
+          </script>
+        </a>
         <!-- <li class="nav-item fs-5">
           <a class="nav-link" href="{{site.baseurl}}/sponsors">Sponsors</a>
         </li> -->
