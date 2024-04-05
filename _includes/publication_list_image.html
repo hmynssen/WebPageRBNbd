@@ -21,7 +21,13 @@
                 <div class="card-body">
                 <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 h3" href="{{site.baseurl}}/{{item.dir}}{{name_html}}">{{item.title}}</a><br> 
                 <div class="card-text">{{ item.authors | replace: " and", ","}}</div>
-                <div class="card-text"><small class="text-muted">Published: {{item.date | date: '%B, %Y' }}</small></div>
+                <div class="card-text"><small class="text-muted">
+                    {%if page.lang=='en'%}
+                        Published: 
+                    {%elsif page.lang=='pt'%}
+                        Publicado: 
+                    {%endif%}
+                    {{item.date | date: '%B, %Y' }}</small></div>
                 </div>
             </div>
             </div>

@@ -4,7 +4,13 @@
       <div class="col col-md-3">
         <div class="row mb-1">
           <div class="col text-muted text-center">
-            <p>© 2024 Brazilian Neurobiodiversity Network</p>
+            <p>
+              {%if page.lang=='en'%}
+              © 2024 Brazilian Neurobiodiversity Network
+              {%elsif page.lang=='pt'%}
+              © 2024 Rede Brasileria de Neurobiodiversidade
+              {%endif%}
+            </p>
           </div>
         </div>
         <div class="row">
