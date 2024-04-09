@@ -1,5 +1,5 @@
 ---
 layout: projects
-lang: en
-title: Projects
+lang: pt
+title: Projetos
 ---

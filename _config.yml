@@ -18,18 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Neurobiodiversidade
+title: 
+  pt: Neurobiodiversidade
+  en: Neurobiodiversity
 email: redebnbd@example.com
 author: Heitor Mynssen
 keywords: lab network science
-description: >- # this means to ignore newlines until "baseurl:"
-  Rede Brasileira de Neurobiodiversidade. 
-  Brazilian network of neurobiodiversity.
+description:
+  pt: Rede Brasileira de Neurobiodiversidade. 
+  en: Brazilian network of Neurobiodiversity.
 domain: "hmynssen.github.io/WebPageRBNbd"
 baseurl: "/WebPageRBNbd" # the subpath of your site, e.g. /blog
 url: "https://hmynssen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: redebnbd
 github_username: redebnbd
+
+lang: pt 
+languages: ["pt","en"]
+index:
+  pt: 
+  en: home.html
+
 
 # Build settings
 # theme: minima

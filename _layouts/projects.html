@@ -10,7 +10,8 @@ layout: base
             {%if article == 'legacy' or article == 'model'%}
             {%continue%}
             {%endif%}
-            {% assign files = site.pages | where_exp: "item", "item.path contains 'data/projects'"%}
+            {% assign pr_path = "data/" | append: page.lang |append: "/projects"%}
+            {% assign files = site.pages | where_exp: "item", "item.path contains pr_path"%}
             {% assign files = files | where_exp: "item", "item.path contains article"%}
             {% for item in files %}
                 {%assign name_html = item.name | replace: "md", "html"%}

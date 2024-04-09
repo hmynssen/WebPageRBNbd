@@ -9,7 +9,8 @@ layout: base
 
     <div class="integration-list row justify-content-center text-center py-5">
         {% for person in sorted_members %}
-            {% assign files = site.pages | where_exp: "item", "item.path contains 'data/members'"%}
+            {% assign m_path = "data/" | append: page.lang |append: "/members"%}
+            {% assign files = site.pages | where_exp: "item", "item.path contains m_path"%}
             {% assign files = files | where_exp: "item", "item.path contains person"%}
             {% for item in files %}
                 {%assign name_html = item.name | replace: "md", "html"%}

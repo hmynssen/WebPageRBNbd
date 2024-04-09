@@ -1,6 +1,6 @@
 ---
 layout: members
-lang: en
+lang: pt
 order: kamilla, heitor, bruno, nina
-title: Our team
+title: Nossa equipe
 ---

@@ -1,6 +1,7 @@
 {% for folder in site.data.publications %}
     {% assign article = folder[0]%}
-    {% assign files = site.pages | where_exp: "item", "item.path contains 'data/publications'"%}
+    {% assign p_path = "data/" | append: page.lang |append: "/publications"%}
+    {% assign files = site.pages | where_exp: "item", "item.path contains p_path"%}
     {% assign files = files | where_exp: "item", "item.path contains article"%}
     {% for item in files %}
         {%assign name_html = item.name | replace: "md", "html"%}
