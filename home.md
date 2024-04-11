@@ -2,7 +2,12 @@
 title: Brazilian Neurobiodiversity Network
 layout: home
 lang: en
-cover-img: rbnb_colorida-just.png
+cover-img: carro.jpg
+cover-author: Julia Jabur
+map:
+    map-text-start: We Have
+    map-counter: 12
+    map-text-end: Members Across Brazil
 subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 publications: publications.md
 link: home

@@ -6,15 +6,13 @@ layout: base
 
 <main>
   <div class="jumbotron jumb-odd">
-    <div class="container">
-      <div class="row pt-4 pb-2">
-        <div class="col col-xl-8 col-lg-10">
-          {{ content }}
-        </div>
+    <div class="container" >
+      <div class="row pt-4 pb-2 d-flex justify-content-between ">
+        {% include map.html %}
       </div>
     </div>
   </div>
-  <div class="jumbotron bg-image jumb-even" 
+  <div class="jumbotron bg-image jumb-even" style="min-height: 300px;" 
     {%if page.alt-img%}
     style="
       background-image: url('{{site.baseurl}}/assets/logo/{{page.alt-img}}');
@@ -40,7 +38,7 @@ layout: base
         <div class="col col-lg-4 offset-md-1 h1 fw-bold">
           {% assign publications_page = site.pages | where: 'path', page.publications %}
           {{publications_page[0].home-title}}
-          <a class="btn btn-primary" href="{{site.baseurl}}/{{page.lang}}/publications" role="button">Click here to see more!</a>
+          <a class="btn btn-primary" href="{{site.baseurl}}/publications" role="button">Click here to see more!</a>
         </div>
         <div class="d-flex flex-column align-items-center">
           <div class="col-lg-8 mt-3">
