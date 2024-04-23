@@ -1,7 +1,7 @@
 ---
 personName: 'Kamilla Avelino-de-Souza'
-function: 'Director/Principal Investigator'
-title: 'PhD. in Mofological Sciences'
+function: 'Diretora da RBNB'
+title: 'Doutora em Ciências Morfológicas'
 instagram: 'kamilla'
 twitter: 'kamilla'
 email: 'kamilla'
