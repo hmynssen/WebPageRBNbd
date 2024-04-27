@@ -5,5 +5,5 @@ title: 'PhD. in Physics'
 instagram: ''
 twitter: ''
 email: ''
-picture: ''
+picture: 'bruno.jpeg'
 ---

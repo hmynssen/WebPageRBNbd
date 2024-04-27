@@ -1,9 +1,12 @@
 ---
+layout: person
+lang: pt
 personName: 'Nina Patzke'
-function: 'Advisor'
-title: 'PhD. in Biopsychology'
+alias: 'Nina Patzke'
+function: 'Pesquisadora'
+title: 'Doutora em Biopsicologia'
 instagram: ''
 twitter: ''
 email: ''
-picture: ''
+picture: 'nina.jpg'
 ---

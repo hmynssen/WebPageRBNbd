@@ -1,6 +1,6 @@
 ---
 layout: members
 lang: pt
-order: kamilla, heitor, bruno, nina, luanna
+order: kamilla, bruno, nina, heitor, luanna, thayna
 title: Nossa equipe
 ---
