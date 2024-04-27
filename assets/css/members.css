@@ -8,6 +8,14 @@
 .shadow {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
 }
+.person-img {
+    max-width: 300px;
+    height: auto;
+}
+.rounded-circle-borderless {
+    padding: 0%;
+    border-radius: 50% !important;
+}
 
 @media (min-width: 992px){
     .mb-lg-5 {
