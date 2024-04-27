@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-xl navbar-light sticky-top shadow" style="background-color: #FFFFFF;">
   <div class="container">
     <a class="navbar-brand" id="nav-home-img"
-    onclick="set_href('nav-home-img', '{{site.baseurl}}/{{home_link}}')"  href="">
+    onclick="set_href('nav-home-img', '{{site.baseurl}}/{{home_link}}')"  href="{{site.baseurl}}/{{home_link}}">
       <img src="{{site.baseurl}}/assets/logo/rbnb_colorida-just-nobg.png" alt="" height="50">
     </a>
 
@@ -16,7 +16,7 @@
         </li> -->
         <li class="nav-item">
           <a class="nav-link fs-5" id="nav-home" aria-current="page"
-           onclick="set_href('nav-home', '{{site.baseurl}}/{{home_link}}')" href="">
+           onclick="set_href('nav-home', '{{site.baseurl}}/{{home_link}}')" href="{{site.baseurl}}/{{home_link}}">
             <script type="text/javascript">
               document.write(home_text)
             </script>
@@ -24,7 +24,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" id="nav-pub"
-          onclick="set_href('nav-pub', '{{site.baseurl}}/{{pub_link}}')" href="">
+          onclick="set_href('nav-pub', '{{site.baseurl}}/{{pub_link}}')" href="{{site.baseurl}}/{{pub_link}}">
             <script type="text/javascript">
               document.write(pub_text)
             </script>
@@ -32,7 +32,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" id="nav-proj"
-          onclick="set_href('nav-proj', '{{site.baseurl}}/{{projects_link}}')"  href="">
+          onclick="set_href('nav-proj', '{{site.baseurl}}/{{projects_link}}')"  href="{{site.baseurl}}/{{projects_link}}">
             <script type="text/javascript">
               document.write(projects_text)
             </script>
@@ -40,14 +40,14 @@
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" id="nav-news"
-          onclick="set_href('nav-news', '{{site.baseurl}}/{{news_link}}')" href="">
+          onclick="set_href('nav-news', '{{site.baseurl}}/{{news_link}}')" href="{{site.baseurl}}/{{news_link}}">
             <script type="text/javascript">
               document.write(news_text)
             </script>
           </a>
         </li>
         <a class="nav-link fs-5" id="nav-members" data-bs-hover="dropdown"
-        onclick="set_href('nav-members', '{{site.baseurl}}/{{members_link}}')" href="">
+        onclick="set_href('nav-members', '{{site.baseurl}}/{{members_link}}')" href="{{site.baseurl}}/{{members_link}}">
           <script type="text/javascript">
             document.write(members_text)
           </script>
