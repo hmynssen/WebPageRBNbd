@@ -2,14 +2,15 @@
 layout: base
 ---
 
-{%assign lpath = page.path | split:"/"%}
-{%assign article = lpath[-2] %}
 
-{% assign files = site.static_files | where_exp: "item", "item.path contains 'data/publications'"%}
-{% assign files = files | where_exp: "item", "item.path contains article"%}
-{% assign image = files | where_exp: "item", "item.path contains page.main-image"%}
 <div class="container mb-3 mt-3">
     <div class="row d-flex flex-column align-items-center">
+        
+        {%if page.main-image and page.main-image != ''%}
+            <div class="col mb-3 col-md-8 text-center">
+                <img class="img-fluid rounded" src="{{site.baseurl}}{{page.dir}}/{{page.main-image}}" alt="" style="max-height: 400px;">
+            </div>
+        {%endif%}
         <div class="col col-md-8 mb-3 h2">
             {{page.title}}
         </div>
@@ -19,11 +20,6 @@ layout: base
         <div class="col col-md-8 mb-5 text-muted">
             {{page.date | date: '%B, %Y' }}
         </div>
-        {%if image[0].path%}
-            <div class="col mb-3 col-sm-4 text-center">
-                <img class="img-fluid h-100 rounded-start" src="{{site.baseurl}}/{{image[0].path}}" alt="">
-            </div>
-        {%endif%}
         <hr class="col col-md-8 mb-4 text-muted">
         {%if page.abstract%}
             <div class="col col-md-8 mb-3 h3">

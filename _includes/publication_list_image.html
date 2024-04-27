@@ -20,9 +20,41 @@
             </div>
             <div class="col-md-8 align-self-start h-100 d-flex flex-column">
                 <div class="card-body">
-                <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 h3" href="{{site.baseurl}}/{{item.dir}}{{name_html}}">{{item.title}}</a><br> 
-                <div class="card-text">{{ item.authors | replace: " and", ","}}</div>
-                <div class="card-text"><small class="text-muted">
+                    <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 h3" href="{{site.baseurl}}/{{item.dir}}{{name_html}}">
+                        {%assign title = item.title%}
+                        {%assign length_title = 60%}
+                        {%if title | size > length_title%}
+                            {%if item.short-title and item.short-title != ''%}
+                                {{item.short-title}}
+                            {%else%}
+                                {{title | truncate: length_title, '...' }}
+                            {%endif%}
+
+                        {%else%}
+                            {{title}}
+                        {%endif%}
+                    </a>
+                    <br> 
+                    <div class="card-text">
+                        {%assign authors = item.authors | replace: " and", ","%}
+                        {%assign authors_list = authors | split: ','%}
+                        {%assign authors_max = 10%}
+                        {%if authors_list.size > authors_max%}
+                            {%assign authors = ''%}
+                            {% for i in (1..authors_max) %}
+                                {%assign myi = i | minus: 1 %}
+                                {%if i < authors_max %}
+                                {{authors | append: authors_list[myi] | append: ', '}}
+                                {%else%}
+                                {{authors | append: authors_list[myi]| append: '...'}}
+                                {%endif%}
+                            {% endfor %}
+                            {{authors}}
+                        {%else%}
+                            {{authors_list | array_to_sentence_string}}
+                        {%endif%}
+                    </div>
+                    <div class="card-text"><small class="text-muted">
                     {%if page.lang=='en'%}
                         Published: 
                     {%elsif page.lang=='pt'%}
