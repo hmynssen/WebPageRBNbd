@@ -46,15 +46,29 @@
             </script>
           </a>
         </li>
-        <a class="nav-link fs-5" id="nav-members" data-bs-hover="dropdown"
-        onclick="set_href('nav-members', '{{site.baseurl}}/{{members_link}}')" href="{{site.baseurl}}/{{members_link}}">
-          <script type="text/javascript">
-            document.write(members_text)
-          </script>
-        </a>
-        <!-- <li class="nav-item fs-5">
-          <a class="nav-link" href="{{site.baseurl}}/sponsors">Sponsors</a>
-        </li> -->
+        <li class="nav-item">
+          <a class="nav-link fs-5" id="nav-members"
+          onclick="set_href('nav-members', '{{site.baseurl}}/{{members_link}}')" href="{{site.baseurl}}/{{members_link}}">
+            <script type="text/javascript">
+              document.write(members_text)
+            </script>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" id="nav-colabs" href="{{site.baseurl}}/{{colabs_link}}">
+            <script type="text/javascript">
+              document.write(colabs_text)
+            </script>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" id="nav-home" aria-current="page"
+           onclick="set_href('nav-home', '{{site.baseurl}}/{{about_link}}')" href="{{site.baseurl}}/{{about_link}}">
+            <script type="text/javascript">
+              document.write(about_text)
+            </script>
+          </a>
+        </li>
       </ul>
     </div>
 

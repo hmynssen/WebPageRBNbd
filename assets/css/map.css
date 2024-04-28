@@ -1,0 +1,19 @@
+.pin-map:hover {
+    transform: scale(2.1);
+}
+.pin-map {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    transform-origin: bottom;
+    transform-box:fill-box;
+}
+
+.dolphin-map:hover {
+    transform: scale(0.2);
+}
+.dolphin-map {
+    transform: scale(0.15);
+    transition-duration: 0.2s;
+    transform-origin: center;
+    transform-box:fill-box;
+}

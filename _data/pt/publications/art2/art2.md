@@ -1,8 +1,8 @@
 ---
 layout: article
 lang: pt
-title: 'Anatomical and volumetric description of the guiana dolphin (<i>Sotalia guianensis</i>) brain from an ultra‑high‑feld magnetic resonance imaging'
-short-title: 'Anatomical and volumetric description of the guiana dolphin ...'
+title: 'Anatomical and volumetric description of the Guiana dolphin (<i>Sotalia guianensis</i>) brain from an ultra‑high‑feld magnetic resonance imaging'
+short-title: 'Anatomical and volumetric description of the Guiana dolphin ...'
 authors: 'Kamilla Avelino‑de‑Souza and Heitor Mynssen and Khallil Chaim and Ashley N. Parks and Joana M. P. Ikeda and Haydée Andrade Cunha and Bruno Mota and Nina Patzke'
 date: 2024-04-01 #remember to always use year-month-day (all of them in that order)
 journal: 'Brain Structure and Function'
