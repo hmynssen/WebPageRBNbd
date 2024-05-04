@@ -1,18 +1,28 @@
-{% for folder in site.data.publications %}
+{% for folder in site.data[page.lang].publications %}
     {% assign article = folder[0]%}
-    {% assign pub_path = 'data'+/+page.lang+'/publications'%}
-    {% assign files = site.pages | where_exp: "item", "item.path contains pub_path"%}
+    {% assign p_path = "data/" | append: page.lang |append: "/publications"%}
+    {% assign files = site.pages | where_exp: "item", "item.path contains p_path"%}
     {% assign files = files | where_exp: "item", "item.path contains article"%}
     {% for item in files %}
         {%assign name_html = item.name | replace: "md", "html"%}
         {%assign image_files = item.thumbnail%}
         <div class=" mt-2 mb-5" style="height: 180px;">
-        <div class="card h-100 bg-light" style="border: none;"> 
+        <div class="card h-100 bg-transparent" style="border: none;"> 
             <div class="row g-0 h-100">
             <div class="col align-self-start h-100 d-flex flex-column">
                 <div class="card-body">
                 <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 h3" href="{{site.baseurl}}{{item.dir}}{{name_html}}">{{item.title}}</a><br> 
-                <p class="card-text">{{ item.authors | replace: " and", ","}}</p>
+                <p class="card-text">
+                    {%assign authors = item.authors | replace: " and", ","%}
+                    {%assign authors_list = authors | split: ','%}
+                    {%assign authors_max = 5%}
+                    {%if authors_list.size > authors_max%}
+                        {%assign authors = ''%}
+                        {{authors_list[0]}}, {{authors_list[1]}}, {{authors_list[2]}}, ... &{{authors_list[-1]}}
+                    {%else%}
+                        {{authors_list | array_to_sentence_string |replace_first: ', and', ' & '}}
+                    {%endif%}
+                </p>
                 <p class="card-text"><small class="text-muted">
                     {%if page.lang=='en'%}
                         Published: 

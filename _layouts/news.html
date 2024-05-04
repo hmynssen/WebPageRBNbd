@@ -1,0 +1,96 @@
+---
+layout: base
+---
+
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/projects.css">
+
+<div class="container d-block d-lg-flex mt-5 mb-5">
+    <div class="col-12 col-lg-6">
+    {%assign article = page.main-news%}
+    {% assign news_path = "data/" | append: page.lang |append: "/news"%}
+    {% assign files = site.pages | where_exp: "item", "item.path contains news_path"%}
+    {% assign files = files | where_exp: "item", "item.path contains article"%}
+    {% assign item = files[0]%}
+    <div class="card  p-0 m-0" id="main-news" style="max-height: 500px"> 
+        <a target="_blank" class='link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0 text-dark' href="{{item.link}}">
+        <img class="card-img-top d-block w-100" src="{{site.baseurl}}{{item.dir}}{{item.picture}}" alt="Card image cap"></a>
+        <div class="card-body pt-2 pb-0">
+            <a target="_blank" class='link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0 text-dark' href="{{item.link}}">
+                <h3 class="card-title ms-3 me-3">
+                {{item.title}}
+                </h3>
+            </a>
+            <a target="_blank" class='link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0 text-dark' href="{{item.link}}">
+                <p class="card-text ms-3 me-3 mb-2">
+                {{item.subtitle}}
+                </p>
+            </a>
+            <div class="d-flex mt-1 ms-3 me-3 mb-2">
+                <div class="col-8 me-auto text-muted">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#edab00" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                        <circle cx="8" cy="6" r="4"/>
+                      </svg>
+                    {{item.post-type}}
+                    {%if item.publisher and item.publisher != ''%}
+                     - {{item.publisher}}
+                    {%endif%}
+                </div>
+                <div class="col-3 text-end text-muted">{{item.date | date: "%m/%Y"}}</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-12 d-lg-none mt-4 mb-2">
+        <hr>
+    </div>
+    <div class="col-12 col-lg-6 ms-lg-5 me-lg-5">
+        {% for folder in site.data[page.lang].news %}
+            {% assign article = folder[0]%}
+            {%if article == page.main-news%}
+                {%continue%}
+            {%endif%}
+            {% assign news_path = "data/" | append: page.lang |append: "/news"%}
+            {% assign files = site.pages | where_exp: "item", "item.path contains news_path"%}
+            {% assign files = files | where_exp: "item", "item.path contains article"%}
+            {% assign item = files[0] %}
+            <div class="col mb-4">
+                <a target="_blank" href="{{item.link}}" class="link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0">
+                    <h5 class="text-dark fw-bold ms-2 me-2 mb-1 pt-1">{{item.title}}</h5>
+                </a>
+                <a target="_blank" href="{{item.link}}" class="link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0">
+                    <p class="text-muted mb-1 ms-2 me-2">{{item.subtitle }}</p>
+                </a>
+                <div class="row">
+                    <div class="col me-auto text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="{%if item.marker-color%}{{item.marker-color}}{%else%}#edab00{%endif%}" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                            <circle cx="8" cy="6" r="4"/>
+                        </svg>
+                        {{item.post-type}}
+                        {%if item.publisher and item.publisher != ''%}
+                        - {{item.publisher}}
+                        {%endif%}
+                    </div>
+                    <div class="col-3 text-end text-muted me-4">{{item.date | date: "%m/%Y"}}</div>
+                </div>
+                <div class="col-11 m-auto">
+                    <hr class="hr-shade-bg">
+                </div>
+            </div>
+        {%endfor%}
+        
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link disabled" href="" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link disabled" href="" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</div>

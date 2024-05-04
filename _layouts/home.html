@@ -4,15 +4,8 @@ layout: base
 
 {% include header.html type="page" %}
 
-<main>
-  <div class="jumbotron jumb-odd">
-    <div class="container" >
-      <div class="row pt-4 pb-2 d-flex justify-content-between ">
-        {% include map.html %}
-      </div>
-    </div>
-  </div>
-  <div class="jumbotron bg-image jumb-even" style="min-height: 300px;" 
+<main>  
+  <div class="jumbotron bg-image pb-3 pt-3 jumb-odd" style="min-height: 300px;" 
     {%if page.alt-img%}
     style="
       background-image: url('{{site.baseurl}}/assets/logo/{{page.alt-img}}');
@@ -23,25 +16,25 @@ layout: base
     {%endif%}>
     <div class="container">
 
-      <div class="row pt-4 pb-2 d-none d-lg-flex">
-        <div class="d-flex flex-column align-items-center col-8 col-lg-7">
-            {%include publication_list_image.html%}
-        </div>
-        <div class="col-4 col-xxl-4 offset-lg-1 d-flex flex-column align-items-center">
-          <div class="mt-5 h1 fw-bold">
+      <div class="row pt-4 pb-2 d-none d-xxl-flex">
+        <div class="col-3 col-xxl-3 d-flex flex-column align-items-center">
+          <div class="mt-5 h2 text-decoration-underline text-end" style=" -webkit-text-stroke-width: 3px;">
             {% assign publications_page = site.pages | where: 'path', page.publications %}
             {{publications_page[0].home-title}}
           </div>
+          <div class="d-none d-xxl-flex vr ms-auto p-0 mt-3"  style="height: 40vh; "></div>
+        </div>
+        <div class="d-flex flex-column align-items-center col-9 col-lg-9 col-xxl-8 offset-xxl-1">
+          {%include publication_list_image.html%}
         </div>
       </div>
-      <div class="row pt-4 pb-2 d-lg-none">
-        <div class="col col-lg-4 offset-md-1 h1 fw-bold">
+      <div class="row pt-4 pb-2 d-xxl-none">
+        <div class="col col-xxl-3 h2 fw-bold">
           {% assign publications_page = site.pages | where: 'path', page.publications %}
           {{publications_page[0].home-title}}
-          <a class="btn btn-primary" href="{{site.baseurl}}/publications" role="button">Click here to see more!</a>
         </div>
         <div class="d-flex flex-column align-items-center">
-          <div class="col-lg-8 mt-3">
+          <div class="col-xxl-8 mt-3">
               {%include publication_list.html%}
           </div>
         </div>
@@ -49,6 +42,32 @@ layout: base
 
     </div>
   </div>
+
+  <div class="jumbotron pb-3 pt-3 jumb-even">
+    <div class="container" >
+      <div class="row d-flex justify-content-center ">
+        {% include map_description.html %}
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron pb-3 pt-3 jumb-odd">
+    <div class="container" >
+      <div class="row d-flex justify-content-center pt-5">
+        <div class="h2 text-center text-decoration-underline" style=" -webkit-text-stroke-width: 3px;">
+          {{page.news.title}}
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center ">
+        <div class="col col-lg-9 col-xxl-8 mt-5 mb-5 pb-5">
+          {% include news_carousel.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
 </main>
 
 

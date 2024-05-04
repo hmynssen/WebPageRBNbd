@@ -1,0 +1,24 @@
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+  }
+#main-news a  {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+#main-news a img {
+  object-fit: cover;
+  object-position: center;
+  height: 40vh;
+  overflow: hidden;
+}
+
+#main-news img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
+}

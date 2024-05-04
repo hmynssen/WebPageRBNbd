@@ -1,6 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=VT323&display=swap');
-    body {
-      --bs-font-sans-serif: 'Kdam Thmor Pro', sans-serif;
-      --bs-body-font-family: var(--bs-font-sans-serif);
-      --bs-font-monospace: 'VT323', monospace;
-    }

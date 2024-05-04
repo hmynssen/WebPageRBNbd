@@ -1,0 +1,39 @@
+
+
+
+<div class="col-12 col-md-4 col-lg-2 offset-lg-1 ms-5 align-self-center text-center d-none d-md-block ">
+    <div class="h2  mb-3 ">{{page.map.map-sp-start}}</div>
+    <div class="h1 d-none d-md-block  mb-3" style="font-size: 1000%; color:#0f296d; -webkit-text-stroke-width: 8px;">{{page.map.map-sp-counter}}</div>
+    <div class="h2  ">{{page.map.map-sp-end}}</div> 
+</div>
+<div class="col-3 col-md-5 col-lg-2 align-self-center text-center d-block d-md-none">
+    <div class="h2  mb-3 ">{{page.map.map-sp-start}}</div>
+    <div class="h1" style="font-size: 600%; color:#0f296d; -webkit-text-stroke-width: 5px;">{{page.map.map-sp-counter}}</div>
+    <div class="h2  ">{{page.map.map-sp-end}}</div> 
+</div>
+
+<div class="col-3 col-md-4 col-lg-2 ms-5 me-5 align-self-center text-center">
+    <div class="h2  mb-3 ">{{page.map.map-text-start}}</div>
+    <div class="h1 d-none d-md-block mb-3" style="font-size: 1000%;">
+        <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0" id="colab-link-home-number" href="" style="color: #27aae1;  -webkit-text-stroke-width: 8px;">
+        <script type="text/javascript">set_href('colab-link-home-number', '{{site.baseurl}}/'+about_link)</script>
+        {{page.map.map-counter}}
+        </a>
+    </div>
+    <div class="h1 d-block d-md-none" style="font-size: 600%;">
+        <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0" id="colab-link-home-number" href="" style="color: #27aae1;  -webkit-text-stroke-width: 5px;">
+        <script type="text/javascript">set_href('colab-link-home-number', '{{site.baseurl}}/'+about_link)</script>
+        {{page.map.map-counter}}
+        </a>
+    </div>
+    <div class="h2 ">
+        <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 text-dark " id="colab-link-home-text" href="">
+        <script type="text/javascript">set_href('colab-link-home-text', '{{site.baseurl}}/'+about_link)</script>
+        {{page.map.map-text-end}}
+        </a>
+    </div>    
+</div>
+
+<div class="col-12 col-lg-6 align-self-top text-center">    
+    {%include map.html%}
+</div>

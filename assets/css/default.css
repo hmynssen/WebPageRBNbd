@@ -65,6 +65,10 @@ body {
     --bs-font-monospace: 'VT323', monospace;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 .hr-shade-bg {
     border: 0;
     height: 1px;

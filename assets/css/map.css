@@ -9,7 +9,7 @@
 }
 
 .dolphin-map:hover {
-    transform: scale(0.2);
+    transform: scale(0.25);
 }
 .dolphin-map {
     transform: scale(0.15);

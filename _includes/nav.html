@@ -1,68 +1,68 @@
-<nav class="navbar navbar-expand-xl navbar-light sticky-top shadow" style="background-color: #FFFFFF;">
+<nav class="navbar navbar-expand-xl navbar-light sticky-top bg-light">
   <div class="container">
     <a class="navbar-brand" id="nav-home-img"
     onclick="set_href('nav-home-img', '{{site.baseurl}}/{{home_link}}')"  href="{{site.baseurl}}/{{home_link}}">
-      <img src="{{site.baseurl}}/assets/logo/rbnb_colorida-just-nobg.png" alt="" height="50">
+      <img src="{{site.baseurl}}/assets/logo/rbnb_colorida-just-nobg.png" alt="" height="70">
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaritems" aria-controls="navbaritems" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaritems" aria-controls="navbaritems" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbaritems">
+    <div class="navbar-collapse collapse" id="navbaritems" style="border-radius: 0% 0% 15px 15px;">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <!-- <li class="nav-item">
           <a class="nav-link fs-5" aria-current="page" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
         </li> -->
-        <li class="nav-item">
-          <a class="nav-link fs-5" id="nav-home" aria-current="page"
+        <li class="nav-item ms-1">
+          <a class="nav-link fs-5 {%if page.path contains 'index' or page.path contains 'home'%} fw-bold text-decoration-underline{%endif%}" id="nav-home" aria-current="page"
            onclick="set_href('nav-home', '{{site.baseurl}}/{{home_link}}')" href="{{site.baseurl}}/{{home_link}}">
             <script type="text/javascript">
               document.write(home_text)
             </script>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" id="nav-pub"
+        <li class="nav-item ms-1">
+          <a class="nav-link fs-5 {%if page.path contains pub_link%} fw-bold text-decoration-underline{%endif%}" id="nav-pub"
           onclick="set_href('nav-pub', '{{site.baseurl}}/{{pub_link}}')" href="{{site.baseurl}}/{{pub_link}}">
             <script type="text/javascript">
               document.write(pub_text)
             </script>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" id="nav-proj"
+        <!-- <li class="nav-item ms-1">
+          <a class="nav-link fs-5 {%if page.path contains projects_link%} fw-bold text-decoration-underline{%endif%}" id="nav-proj"
           onclick="set_href('nav-proj', '{{site.baseurl}}/{{projects_link}}')"  href="{{site.baseurl}}/{{projects_link}}">
             <script type="text/javascript">
               document.write(projects_text)
             </script>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" id="nav-news"
+        </li> -->
+        <li class="nav-item ms-1">
+          <a class="nav-link fs-5 {%if page.path contains news_link%} fw-bold text-decoration-underline{%endif%}" id="nav-news"
           onclick="set_href('nav-news', '{{site.baseurl}}/{{news_link}}')" href="{{site.baseurl}}/{{news_link}}">
             <script type="text/javascript">
               document.write(news_text)
             </script>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" id="nav-members"
+        <li class="nav-item ms-1">
+          <a class="nav-link fs-5 {%if page.path contains members_link%} fw-bold text-decoration-underline{%endif%}" id="nav-members"
           onclick="set_href('nav-members', '{{site.baseurl}}/{{members_link}}')" href="{{site.baseurl}}/{{members_link}}">
             <script type="text/javascript">
               document.write(members_text)
             </script>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" id="nav-colabs" href="{{site.baseurl}}/{{colabs_link}}">
+        <li class="nav-item ms-1">
+          <a class="nav-link fs-5 {%if page.path contains colabs_link%} fw-bold text-decoration-underline{%endif%}" id="nav-colabs" href="{{site.baseurl}}/{{colabs_link}}">
             <script type="text/javascript">
               document.write(colabs_text)
             </script>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" id="nav-home" aria-current="page"
+        <li class="nav-item ms-1">
+          <a class="nav-link fs-5 {%if page.path contains about_link%} fw-bold text-decoration-underline{%endif%}" id="nav-home" aria-current="page"
            onclick="set_href('nav-home', '{{site.baseurl}}/{{about_link}}')" href="{{site.baseurl}}/{{about_link}}">
             <script type="text/javascript">
               document.write(about_text)
@@ -74,3 +74,4 @@
 
   </div>
 </nav>
+

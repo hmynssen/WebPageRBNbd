@@ -1,44 +1,12 @@
-<div class="col-12 col-sm-6 col-lg-3 align-self-center text-center">
-    <div class="h2 justify-content-between mb-3">{{page.map.map-text-start}}</div>
-    <div class="h2 justify-content-between mb-3" style="font-size: 800%;">
-        <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0" id="colab-link-home-number" href="" style=" color: #ec0404;">
-        <script type="text/javascript">set_href('colab-link-home-number', '{{site.baseurl}}/'+about_link)</script>
-        {{page.map.map-counter}}
-        </a>
-    </div>
-    <div class="h2 justify-content-between">
-        <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 text-dark" id="colab-link-home-text" href="">
-        <script type="text/javascript">set_href('colab-link-home-text', '{{site.baseurl}}/'+about_link)</script>
-        {{page.map.map-text-end}}
-        </a>
-    </div>    
-</div>
-<div class="col-12 col-sm-6 col-lg-3 align-self-center text-center">
-    <div class="h2 justify-content-between mb-3">{{page.map.map-sp-start}}</div>
-    <div class="h2 justify-content-between mb-3" style="font-size: 800%;">{{page.map.map-sp-counter}}</div>
-    <div class="h2 justify-content-between">{{page.map.map-sp-end}}</div>    
-</div>
 
-<div class="col-12 col-lg-5">
-    <svg baseprofile="tiny" id="br-map-svg" fill="#6f9c76" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".0" version="1.2" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+<div class="">
+    <svg baseprofile="tiny" id="br-map-svg" transform="scale(1.08)"  stroke="#ffffff" 
+    stroke-linecap="round" stroke-linejoin="round" stroke-width=".0" version="1.2" viewBox="0 -40 1000 1000" xmlns="http://www.w3.org/2000/svg"
+    style="position:relative;">
         <g>
             <image width="1000" height="1000" href="{{site.baseurl}}/assets/svg/maps/contour.svg"/>
-            {% for folder in site.data[page.lang].colabs %}
-                {% assign article = folder[0]%}
-                {%if article == 'legacy' or article == 'model'%}
-                {%continue%}
-                {%else%}
-                {%assign article = article | append: '/'%}
-                {%endif%}
-                {% assign pr_path = "data/" | append: page.lang |append: "/colabs"%}
-                {% assign files = site.pages | where_exp: "item", "item.path contains pr_path"%}
-                {% assign files = files | where_exp: "item", "item.path contains article"%}
-                {% for item in files %}
-                    {{item.content}}
-                {%endfor%}
-            {%endfor%}
 
-            <g id='waves'>
+            <g id='waves'  stroke="#fff" stroke-width="10">
             {% for folder in site.data[page.lang].collect %}
                 {% assign article = folder[0]%}
                 {%if article == 'legacy' or article == 'model'%}
@@ -47,6 +15,22 @@
                 {%assign article = article | append: '/'%}
                 {%endif%}
                 {% assign pr_path = "data/" | append: page.lang |append: "/collect"%}
+                {% assign files = site.pages | where_exp: "item", "item.path contains pr_path"%}
+                {% assign files = files | where_exp: "item", "item.path contains article"%}
+                {% for item in files %}
+                    {{item.content}}
+                {%endfor%}
+            {%endfor%}
+            </g>
+            <g >
+            {% for folder in site.data[page.lang].colabs %}
+                {% assign article = folder[0]%}
+                {%if article == 'legacy' or article == 'model'%}
+                {%continue%}
+                {%else%}
+                {%assign article = article | append: '/'%}
+                {%endif%}
+                {% assign pr_path = "data/" | append: page.lang |append: "/colabs"%}
                 {% assign files = site.pages | where_exp: "item", "item.path contains pr_path"%}
                 {% assign files = files | where_exp: "item", "item.path contains article"%}
                 {% for item in files %}

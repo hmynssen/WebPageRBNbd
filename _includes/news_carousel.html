@@ -1,0 +1,43 @@
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner rounded-3 border border-dark-subtle shadow">
+    {%assign selection = page.news.carousel-selection | remove: ' ' | split:','%}
+    {% for folder in selection %}
+    
+    {% if forloop.first %}
+      {%assign first_case = 'active'%}
+    {% endif %}
+    {% assign article = folder%}
+    {% assign news_path = "data/" | append: page.lang |append: "/news"%}
+    {% assign files = site.pages | where_exp: "item", "item.path contains news_path"%}
+    {% assign files = files | where_exp: "item", "item.path contains article"%}
+    {% for item in files %}
+      <div class="carousel-item {{first_case}}" data-bs-interval="10000">
+        <img src="{{site.baseurl}}{{item.dir}}{{item.picture}}" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="bg-white rounded-4">
+            <a target="_blank" href="{{item.link}}" class="link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0">
+              <h5 class="text-dark fw-bold ms-2 me-2 mb-1 pt-1">{{item.title}}</h5>
+            </a>
+            <a target="_blank" href="{{item.link}}" class="link-underline-dark link-underline-opacity-0 link-underline-opacity-0-hover link-offset-0">
+              <p class="text-muted mb-1">{{item.subtitle | truncatewords: 10 | replace: '...', ' ...'}}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    {%assign first_case = ''%}
+    {%endfor%}
+  {%endfor%}
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
