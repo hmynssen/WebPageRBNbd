@@ -21,6 +21,7 @@ layout: base
                         <!--Card image-->
                         <div class="row  mt-auto">
                             <div class="view overlay">
+                                <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 text-dark" href="{{site.baseurl}}{{item.dir}}{{name_html}}">
                                 {%if image_files and image_files != ''%}
                                 <img class="img-fluid proj-card rounded" src="{{site.baseurl}}{{item.dir}}{{image_files}}" alt="" 
                                 style="width: auto;
@@ -32,8 +33,6 @@ layout: base
                                 <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
                                 </svg>
                                 {%endif%}
-                                <a href="#">
-                                <div class="mask rgba-white-slight"></div>
                                 </a>
                             </div>
                         </div>
@@ -46,7 +45,11 @@ layout: base
                                         {{item.institute}}
                                     </a>
                                 </div>
-                                <div class="card-text text-muted">{{item.full-name}}</div>
+                                <div class="card-text text-muted">
+                                    <a class="link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-1 text-dark" href="{{site.baseurl}}{{item.dir}}{{name_html}}">
+                                    {{item.full-name}}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
