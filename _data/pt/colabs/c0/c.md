@@ -1,8 +1,16 @@
 ---
 layout: institute
 lang: pt
-institute: ufrj
-graber: 123
+institute: IDOR
+full-name: Instituto D'or de Pesquisa e Ensino
+disc: '"Fundado em 2010 no Rio de Janeiro, o Instituto D’Or de Pesquisa e Ensino (IDOR) é uma organização sem fins lucrativos que tem como objetivo contribuir para a evolução da ciência, de forma a melhorar a condição de vida humana. Para isso, combina pesquisa de ponta, capacitação profissional e desenvolvimento tecnológico na área da saúde."'
+site: https://www.rededorsaoluiz.com.br/instituto/idor/
+facebook: https://www.facebook.com/DOrInstitute/
+instagram: https://www.instagram.com/idor_oficial/
+twitter: https://twitter.com/Institutodor
+linkedin: https://www.linkedin.com/school/institutodor/
+youtube: https://www.youtube.com/channel/UCdhn8zaVUA4MaRmOhXmqQSQ
+image: idor.png
 ---
 
 <g id='colabs-c0' transform="translate(650 535)">

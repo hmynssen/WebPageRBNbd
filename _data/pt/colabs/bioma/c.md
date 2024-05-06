@@ -1,6 +1,16 @@
 ---
 layout: institute
 lang: pt
+institute: BioMA
+full-name: Biologia e Conservação de Mamíferos Aquáticos da Amazônia
+disc: 
+site: https://bioma-research.weebly.com/
+facebook: https://www.facebook.com/BioMA.Instituto
+instagram: 
+twitter: 
+linkedin: 
+youtube: 
+image: bioma.jpg
 
 
 ---

@@ -1,6 +1,16 @@
 ---
 layout: institute
 lang: pt
+institute: Instituto Biopesca
+full-name: Instituto Biopesca 
+disc: 
+site: http://www.biopesca.org.br
+facebook: https://www.facebook.com/institutobiopesca
+instagram: https://www.instagram.com/institutobiopesca
+twitter: 
+linkedin: 
+youtube: https://www.youtube.com/c/institutobiopescacanal
+image: top_logo.png
 
 
 ---

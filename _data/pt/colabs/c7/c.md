@@ -1,8 +1,16 @@
 ---
 layout: institute
 lang: pt
-
-
+institute: UERN
+full-name: Universidade do Estado do Rio Grande do Norte
+disc: 
+site: https://portal.uern.br
+facebook: https://www.facebook.com/UERNoficial/
+instagram: https://www.instagram.com/uernoficial/
+twitter: https://twitter.com/uernoficial
+linkedin: 
+youtube: https://www.youtube.com/c/UERNOficial
+image: logo.jpg
 ---
 
 <g id='colabs-c7' transform="translate(775 207)">

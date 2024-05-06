@@ -1,8 +1,16 @@
 ---
 layout: institute
 lang: pt
-
-
+institute: IBJ
+full-name: Instituto Baleia Jubarte
+disc: 
+site: https://www.baleiajubarte.org.br
+facebook: https://www.facebook.com/projetobaleiajubarte/
+instagram: https://www.instagram.com/projetobaleiajubarte/?hl=pt-br
+twitter: 
+linkedin: 
+youtube: https://www.youtube.com/c/ProjetoBaleiaJubarte
+image: ibj.png
 ---
 
 <g id='colabs-c13' transform="translate(690 357)">

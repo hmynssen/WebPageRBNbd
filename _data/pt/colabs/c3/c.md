@@ -1,9 +1,16 @@
 ---
 layout: institute
 lang: pt
-institute: Maqua
-graber: 1236
-
+institute: Instituto Boto Cinza
+full-name: Instituto Boto Cinza
+disc: 
+site: https://www.institutobotocinza.org
+facebook: https://www.facebook.com/InstitutoBotoCinza/
+instagram: https://www.instagram.com/institutobotocinza/
+twitter: https://twitter.com/boto_cinza
+linkedin: 
+youtube: https://www.youtube.com/user/projetobotocinza
+image: ibc.jpg
 
 ---
 

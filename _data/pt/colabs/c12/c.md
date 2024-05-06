@@ -1,7 +1,16 @@
 ---
 layout: institute
 lang: pt
-
+institute: Instituto Mamirauá
+full-name: Instituto de Desenvolvimento Sustentável Mamirauá
+disc: 
+site: https://mamiraua.org.br/
+facebook: https://www.facebook.com/institutomamiraua/
+instagram: https://www.instagram.com/institutomamiraua/
+twitter: 
+linkedin: 
+youtube: https://www.youtube.com/user/InstitutoMamiraua
+image: logo.png
 
 ---
 

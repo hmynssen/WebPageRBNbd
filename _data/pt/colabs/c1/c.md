@@ -1,8 +1,16 @@
 ---
 layout: institute
 lang: pt
-institute: Idor
-graber: 1234
+institute: CENABIO
+full-name: Centro Nacional de Biologia Estrutural e Bioimagem
+disc: Centro Nacional de Biologia Estrutural e Bioimagem (CENABIO) é uma unidade multiusuária da Universidade Federal do Rio de Janeiro (UFRJ) que oferece estudos e abordagens experimentais para obtenção de imagens de órgãos, células e biomoléculas com um amplo suporte tecnológico para a Comunidade Científica, conta ainda com equipamentos modernos, corpo técnico qualificado e diretoria composta de professores pesquisadores de alto nível.
+site: https://cenabio.ufrj.br
+facebook: https://www.facebook.com/cenabioextensao/
+instagram: https://www.instagram.com/cenabioufrj/
+twitter: 
+linkedin: 
+youtube: https://www.youtube.com/@CenabioExtensao
+image: logo-cenabio.png
 
 ---
 

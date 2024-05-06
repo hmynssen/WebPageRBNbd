@@ -1,7 +1,16 @@
 ---
 layout: institute
 lang: pt
-
+institute: FMA
+full-name: Fundação Mamíferos Aquáticos
+disc: 
+site: https://mamiferosaquaticos.org.br
+facebook: https://www.facebook.com/mamiferosaquaticos
+instagram: https://www.instagram.com/mamiferosaquaticos
+twitter: 
+linkedin: 
+youtube: https://www.youtube.com/mamiferosaquaticos
+image: logo02.png
 
 ---
 

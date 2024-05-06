@@ -1,7 +1,16 @@
 ---
 layout: institute
 lang: pt
-
+institute: FMUSP
+full-name: Faculdade de Medicina da Universidade de São Paulo
+disc: Laboratório de Ressonância Magnética em Neurorradiologia (LIM/44)
+site: https://www.hc.fm.usp.br/hc/portal/
+facebook: https://www.facebook.com/FMUSPOficial/
+instagram: https://www.instagram.com/fmusp_oficial/
+twitter: https://twitter.com/FMUSPoficial
+linkedin: https://www.linkedin.com/school/fmuspoficial/
+youtube: https://www.youtube.com/channel/UCmiLXu0Pn3noQGpO2Pvdxuw
+image: logo-oficial-fmusp.png
 
 ---
 

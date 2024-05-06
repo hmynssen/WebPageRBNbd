@@ -1,7 +1,16 @@
 ---
 layout: institute
 lang: pt
-
+institute: UFRN
+full-name: Universidade Federal do Rio Grande do Norte
+disc: 
+site: https://www.ufrn.br
+facebook: https://www.facebook.com/ufrnoficial
+instagram: https://www.instagram.com/ufrn.br/
+twitter: https://twitter.com/ufrnbr
+linkedin: 
+youtube: https://www.youtube.com/user/TVAgecom
+image: brasao-rodape.png
 
 ---
 

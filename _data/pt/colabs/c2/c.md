@@ -1,8 +1,13 @@
 ---
 layout: institute
 lang: pt
-institute: Cenabio
-graber: 1235
+institute: MAQUA
+full-name: Laboratório de Mamíferos Aquáticos e Bioindicadores
+disc: 'O Laboratório de Mamíferos Aquáticos e Bioindicadores (MAQUA) está localizado na Universidade Estadual do Rio de Janeiro e foi inaugurado em 1992. Foi um dos primeiros colaboradores da RBNB e é um dos dois centros cariocas que nos auxilia no processo de coleta dos córtices. Ao todo, conta com mais de 20 membros para realizar suas tarefas diárias de monitoramento e análises laboratoriais.'
+site: https://maqua.com.br
+facebook: https://www.facebook.com/maqua.uerj
+instagram: https://www.instagram.com/maquauerj 
+image: Maqua_Logo.png
 
 
 ---
