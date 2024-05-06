@@ -18,7 +18,7 @@ layout: base
 
       <div class="row pt-4 pb-2 d-none d-xxl-flex">
         <div class="col-3 col-xxl-3 d-flex flex-column align-items-center">
-          <div class="mt-5 h2 text-decoration-underline text-end" style=" -webkit-text-stroke-width: 3px;">
+          <div class="mt-5 h1 text-end" style="font-size: 260%; -webkit-text-stroke-width: 3px;">
             {% assign publications_page = site.pages | where: 'path', page.publications %}
             {{publications_page[0].home-title}}
           </div>
@@ -54,8 +54,13 @@ layout: base
   <div class="jumbotron pb-3 pt-3 jumb-odd">
     <div class="container" >
       <div class="row d-flex justify-content-center pt-5">
-        <div class="h2 text-center text-decoration-underline" style=" -webkit-text-stroke-width: 3px;">
+        <div class="h1 text-center" style=" -webkit-text-stroke-width: 2px; font-size: 300%;">
           {{page.news.title}}
+        </div>
+      </div>
+      <div class="row mb-2 justify-content-center">
+        <div class="d-none d-md-block col-md-1">
+          <hr style="border-top: 10px solid; opacity: 0.7; border-color: #edab00;">
         </div>
       </div>
       <div class="row d-flex justify-content-center ">
